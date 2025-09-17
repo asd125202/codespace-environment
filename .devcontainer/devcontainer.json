@@ -1,4 +1,6 @@
 {
+  "name": "My Dev Environment",
+  "postCreateCommand": "npm i -g @anthropic-ai/claude-code claude-flow live-server",
   "customizations": {
     "codespaces": {
       "repositories": {
@@ -6,6 +8,12 @@
           "permissions": "write-all"
         }
       }
+    },
+    "vscode": {
+      "extensions": [
+        "ritwickdey.LiveServer",
+        "GitHub.copilot"
+      ]
     }
   }
 }
