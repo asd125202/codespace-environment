@@ -1,6 +1,6 @@
 {
   "name": "My Dev Environment",
-  "postCreateCommand": "npm i -g @anthropic-ai/claude-code claude-flow live-server",
+  "postCreateCommand": "npm i -g @anthropic-ai/claude-code claude-flow live-server && echo 'alias ccsp=\"claude --dangerously-skip-permissions\"' >> ~/.bashrc && echo 'alias cfi=\"claude-flow init --sparc\"' >> ~/.bashrc && echo 'alias cfs=\"claude-flow swarm\"' >> ~/.bashrc && echo 'alias serve=\"python -m http.server 8000\"' >> ~/.bashrc",
   "customizations": {
     "codespaces": {
       "repositories": {
